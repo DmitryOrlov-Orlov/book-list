@@ -11,13 +11,13 @@ const BookForm = ({ eventButton, book, setBook, titleForm, titleButton }) => {
         value={book.title}
         onChange={(e) => setBook({ ...book, title: e.target.value })}
         type="text"
-        placeholder='Название книги'
+        placeholder='Автор'
       />
       <MyInput
         value={book.body}
         onChange={(e) => setBook({ ...book, body: e.target.value })}
         type="text"
-        placeholder='Описание книги'
+        placeholder='Название книги'
       />
       <MyButton onClick={eventButton}>{titleButton}</MyButton>
     </form>
